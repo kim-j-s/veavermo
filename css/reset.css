@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* font */
+@font-face {
+  font-family: "Noto Sans Kr";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../font/NotoSans-Light.eot?") format("eot"),
+  url("../font/NotoSans-Light.woff") format("woff"),
+  url("../font/NotoSans-Light.woff2") format("woff2"),
+  url("../font/NotoSans-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans Kr";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../font/NotoSans-DemiLight.eot?") format("eot"),
+  url("../font/NotoSans-DemiLight.woff") format("woff"),
+  url("../font/NotoSans-DemiLight.woff2") format("woff2"),
+  url("../font/NotoSans-DemiLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans Kr";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/NotoSans-Regular.eot?") format("eot"),
+  url("../font/NotoSans-Regular.woff") format("woff"),
+  url("../font/NotoSans-Regular.woff2") format("woff2"),
+  url("../font/NotoSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans Kr";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../font/NotoSans-Medium.eot?") format("eot"),
+  url("../font/NotoSans-Medium.woff") format("woff"),
+  url("../font/NotoSans-Medium.woff2") format("woff2"),
+  url("../font/NotoSans-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Noto Sans Kr";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../font/NotoSans-Bold.eot?") format("eot"),
+  url("../font/NotoSans-Bold.woff") format("woff"),
+  url("../font/NotoSans-Bold.woff2") format("woff2"),
+  url("../font/NotoSans-Bold.otf") format("opentype");
+}
+
+/* @font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../font/Montserrat-Light.eot?") format("eot"),
+  url("../font/Montserrat-Light.woff") format("woff"),
+  url("../font/Montserrat-Light.woff2") format("woff2"),
+  url("../font/Montserrat-Light.otf") format("opentype");
+}
+
+@font-face {
+font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../font/Montserrat-Regular.eot?") format("eot"),
+  url("../font/Montserrat-Regular.woff") format("woff"),
+  url("../font/Montserrat-Regular.woff2") format("woff2"),
+  url("../font/Montserrat-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../font/Montserrat-Medium.eot?") format("eot"),
+  url("../font/Montserrat-Medium.woff") format("woff"),
+  url("../font/Montserrat-Medium.woff2") format("woff2"),
+  url("../font/Montserrat-Medium.otf") format("opentype");
+} */
+
+/* HTML Default */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, article, aside, hgroup, header, footer, figure, figcaption, nav, section { margin:0; padding:0; border:0; font-weight: 300; font-size:14px; vertical-align:baseline;-webkit-box-sizing:border-box; box-sizing:border-box;}
+article, aside, hgroup, header, footer, figure, figcaption, nav, section { display: block; }
+html {height: 100%; font-size: 10px;}
+body {min-width:100%; margin:0; padding:0; -webkit-box-sizing:border-box; box-sizing:border-box; font-family: 'Noto Sans Kr', sans-serif; font-size:10px; color:#1e1e1e;}
+body {width:100%; -webkit-text-size-adjust: none;}
+ol, ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,q:before, q:after { content:''; }
+table { border-collapse:collapse; border-spacing:0; table-layout:fixed; width:100%;}
+button {margin:0; padding:0; border:0; font:inherit; color:inherit; background:transparent; overflow:visible; cursor:pointer; line-height:1; outline: none;}
+a:link, a:visited, a:hover, a,active, a:focus { text-decoration:none; cursor:pointer;}
+legend, caption {overflow: hidden;position: absolute;top: 0;left: 0;width: 1px;height: 1px;font-size: 0;line-height: 0}
+textarea { resize:vertical; font:inherit; overflow-y:auto; }
+input, select { color:inherit; font:inherit; vertical-align: middle; -webkit-box-sizing:border-box; box-sizing:border-box;}
+address, i { font-style:normal; }
+table { border-collapse:collapse; table-layout:fixed; }
+img, select, input, button { vertical-align:middle; }
+em { font-style:normal; }
+input { font-family: 'Noto Sans Kr', sans-serif;}
+label {cursor:pointer;}
+input::-webkit-input-placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder{
+  line-height: normal !important;
+}
+input::placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder{
+  line-height: normal !important;
+}
+textarea{-webkit-appearance:none;}
+
+/* placeholder */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #b5b9c1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #b5b9c1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(181, 185 ,193 , 1);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #b5b9c1;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button { display: none; }
+label,
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+::-ms-clear {display:none;}
+
+input[type="button"],
+input[type="submit"] {
+  border: 0;
+  outline: 0;
+}

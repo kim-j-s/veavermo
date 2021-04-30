@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <path id="qss6xowxma" d="M8.421 0c4.65 0 8.421 3.77 8.421 8.421V35.79H0V8.421C0 3.771 3.77 0 8.421 0z"/>
+        <path id="fnlkm3424c" d="M8.421 0c4.65 0 8.421 3.77 8.421 8.421V35.79H0V8.421C0 3.771 3.77 0 8.421 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <path d="M0 0H60V60H0z"/>
+                <g transform="translate(9 8)">
+                    <rect width="21.053" height="1.053" y="5.263" fill="#000" rx=".526"/>
+                    <rect width="9.474" height="1.053" x="6.316" fill="#000" rx=".526"/>
+                    <path fill="#000" d="M-.474 32.632h22c.32 0 .58.235.58.526 0 .29-.26.526-.58.526h-22c-.32 0-.579-.235-.579-.526 0-.29.26-.526.58-.526z" transform="rotate(-90 10.526 33.158)"/>
+                    <path fill="#000" d="M.553 10.526h21c.305 0 .552.236.552.527 0 .29-.247.526-.552.526h-21c-.306 0-.553-.236-.553-.526 0-.291.247-.527.553-.527z" transform="rotate(-90 11.053 11.053)"/>
+                    <g fill="#000" transform="translate(3.158 11.579)">
+                        <rect width="7.368" height="1.134" rx=".567"/>
+                        <rect width="7.368" height="1.134" y="4.534" rx=".567"/>
+                        <rect width="7.368" height="1.134" y="9.069" rx=".567"/>
+                        <rect width="7.368" height="1.134" y="13.603" rx=".567"/>
+                    </g>
+                    <g transform="translate(2.105 5.263)">
+                        <mask id="8pjcgc5p9b" fill="#fff">
+                            <use xlink:href="#qss6xowxma"/>
+                        </mask>
+                        <path stroke="#000" d="M.5 35.29h15.842V8.42C16.342 4.046 12.796.5 8.422.5 4.045.5.5 4.046.5 8.421V35.29z"/>
+                        <path fill="#CDFFFB" d="M-1.203 17.18c4.812-2.217 8.421-2.172 10.827.137 3.61 3.464 8.421-2.309 8.421 4.618 0 4.618-.717 8.852-2.152 12.7H.109l-1.312-17.454z" mask="url(#8pjcgc5p9b)"/>
+                        <path stroke="#000" d="M.5 35.29h15.842V8.42C16.342 4.046 12.796.5 8.422.5 4.045.5.5 4.046.5 8.421V35.29z"/>
+                    </g>
+                    <g fill="#000" transform="translate(2.105 15.79)">
+                        <rect width="6.316" height="1.053" rx=".526"/>
+                        <rect width="6.316" height="1.053" y="4.211" rx=".526"/>
+                        <rect width="6.316" height="1.053" y="8.421" rx=".526"/>
+                    </g>
+                </g>
+                <g transform="translate(22.684 29.053)">
+                    <g fill="#FFF" stroke="#000" transform="translate(0 2.105)">
+                        <rect width="25.316" height="20.053" x=".5" y=".5" rx="3"/>
+                    </g>
+                    <rect width="1.053" height="4.211" x="7.368" fill="#000" rx=".526"/>
+                    <rect width="1.053" height="4.211" x="17.895" fill="#000" rx=".526"/>
+                    <path fill="#000" d="M13.132-5.263h.052c.276 0 .5.224.5.5v25.316c0 .276-.224.5-.5.5h-.052c-.277 0-.5-.224-.5-.5V-4.763c0-.276.223-.5.5-.5z" transform="rotate(-90 13.158 7.895)"/>
+                    <path stroke="#056BFF" stroke-linecap="round" stroke-width="2" d="M8.421 14.537L11.053 17.495 17.368 11.579"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
