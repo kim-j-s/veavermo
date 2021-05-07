@@ -346,6 +346,9 @@ strong {
 	font-weight: inherit;
 	color: #056bff;
 }
+.section-04 .mockup-box {
+	background-image:url(../img/img-mockup-shadow02.svg);
+}
 .visual-wrap .img-box {
 	display: block;
 	position: relative;
