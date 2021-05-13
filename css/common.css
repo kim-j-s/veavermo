@@ -1990,9 +1990,9 @@ strong {
 	right:0;
 	display:block;
 	width:8rem;
-	height:4.9rem;
+	height:4.4rem;
 	background-color:#ebeff3;
-	line-height:4.9rem;
+	line-height:4.4rem;
 	border-left:1px solid #ebeff3;
 	text-align:center;
 }
@@ -2428,6 +2428,7 @@ strong {
 
 .view-content {
 	padding:4rem 0 5rem;
+	font-size:1.6rem
 	border-top: 1px solid #ebeff3;
 }
 
