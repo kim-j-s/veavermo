@@ -185,6 +185,7 @@
 
         $('.layer-close').on('click', function () {
             $(this).closest('.layer-pop').removeClass('active').addClass('out');
+            $('body').removeClass('non-scroll');
         })
     }
 
@@ -306,5 +307,20 @@
         popControl();
 
         bArrow();
+
+        // 210513 검색 결과 없음
+        var win_h = $(window).height();
+        var board_head_h = $('.board-head').innerHeight();
+        var board_cont_h = $('.board-cont').innerHeight();
+        var noTitle_except_h = $('.srch-box').outerHeight(true) + $('.btn-area').outerHeight(true);
+        var noTitle_h_new  = win_h - board_head_h - noTitle_except_h - 100; // 100 = board-cont의 padding + tbl-list의 padding
+
+        //console.log("전체높이 :" + win_h, "/ 헤더높이 :" + board_head_h, "/ 컨텐츠높이 :" + board_cont_h, "/ 글없음 제외한 높이 :" + noTitle_except_h, "/ 적용값 :" + noTitle_h_new);
+
+        var noTitle = $('.tbl-list .tbl-body.no-title');
+        if(noTitle.length != 0){
+            noTitle.height(noTitle_h_new);
+        }
+
     });
 })(jQuery);

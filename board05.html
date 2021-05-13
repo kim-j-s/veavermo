@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>KONA health</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/hls.js"></script>
+    <script type="text/javascript" src="js/commonui.js"></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <a href="" class="header-logo">
+                <img src="img/img-menu-logo.svg" alt="">
+            </a>
+        </header>
+        <!-- // header -->
+        
+        <!-- 게시판 -->
+        <div id="board-wrap">
+            <div class="inner">
+                <div class="board-head">
+                    <p class="title">자유게시판</p>
+                    <!-- <a href="#none" class="btn-write">글쓰기</a> -->
+                </div>
+
+                <div class="board-cont">
+                    <div class="tbl-view">
+                        <div class="view-head">
+                            <div class="text-tit">제휴 문의드립니다.</div>
+                            <ul class="text-info">
+                                <li>코나헬스 관리자</li>
+                                <li>2021-05-05</li>
+                                <li>조회수 <em>3</em></li>
+                            </ul>
+                            <div class="view-btn bbs-btn">
+                                <a href="#none" onclick="openMsg('msg01');">수정</a>
+                                <a href="#none">삭제</a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            안녕하세요. 코나헬스케어입니다.<br><br><br>
+                            컨텐츠 영역입니다.
+                        </div>
+                        <div class="view-share">
+                            <span class="cmt-num">3</span>
+                            <div class="share-area">
+                                <!-- 좋아요 버튼 클릭시 on 클래스 추가 -->
+                                <a href="#none" class="cmt-heart on">게시글 좋아요<em>3</em></a>
+                                <!-- // 좋아요 버튼 클릭시 on 클래스 추가 -->
+                                <a href="#none" class="cmt-share btn-share">공유하기</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 댓글영역 -->
+                    <div class="board-comment">
+                        <div class="comment-list">
+                            <div class="comment">
+                                <span class="cmt-writer">김원장</span>
+                                <span class="cmt-time">4시간전</span>
+                                <div class="cmt-cont">서비스 오픈을 축하드립니다.</div>
+                                
+                                <div class="cmt-reply">
+                                    <!-- 버튼 활성화 on 클래스 추가 -->
+                                    <a href="#none" class="on">댓글</a>
+                                    <!-- // 버튼 활성화 on 클래스 추가 -->
+
+                                    <div class="cmt-btn bbs-btn">
+                                        <a href="#none" onclick="openMsg('msg01');">수정</a>
+                                        <a href="#none">삭제</a>
+                                    </div>
+                                </div>
+                                
+        
+                                <!-- 댓글달기 화면 활성화 active 클래스 추가 -->
+                                <div class="comment-view active">
+                                    <div class="cmt-member">
+                                        <div class="input-text"><input type="text" name="" id="" placeholder="이름" value="코나헬스 관리자"></div>
+                                        <div class="input-text"><input type="password" name="" id="" placeholder="비밀번호"></div>
+                                    </div>
+                                    <div class="cmt-write">
+                                        <textarea name="" id="" rows="1" placeholder="댓글을 남겨주세요."></textarea>
+                                        <button type="button" class="btn bl">작성</button>
+                                    </div>
+                                </div>
+                                <!-- //댓글달기 화면 활성화 active 클래스 추가 -->
+                            </div>
+        
+                            <!-- 대댓글일 시, re-cmt 클래스 추가 -->
+                            <div class="comment re-cmt">
+                                <span class="cmt-writer">김원장</span>
+                                <span class="cmt-time">4시간전</span>
+                                <div class="cmt-cont">
+                                    서비스 오픈을 축하드립니다. 서비스 오픈을 축하드립니다.<br>
+                                    서비스 오픈을 축하드립니다.
+                                </div>
+
+                                <div class="cmt-reply">
+                                    <a href="#none">댓글</a>
+                                    <div class="cmt-btn bbs-btn">
+                                        <a href="#none" onclick="openMsg('msg01');">수정</a>
+                                        <a href="#none">삭제</a>
+                                    </div>
+                                </div>
+        
+                                <div class="comment-view">
+                                    <div class="cmt-member">
+                                        <div class="input-text"><input type="text" name="" id="" placeholder="이름" value="코나헬스 관리자"></div>
+                                        <div class="input-text"><input type="password" name="" id="" placeholder="비밀번호"></div>
+                                    </div>
+                                    <div class="cmt-write">
+                                        <textarea name="" id="" rows="1" placeholder="댓글을 남겨주세요."></textarea>
+                                        <button type="button" class="btn bl">작성</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // 대댓글일 시, re-cmt 클래스 추가 -->
+        
+                            <div class="comment">
+                                <span class="cmt-writer">김원장</span>
+                                <span class="cmt-time">4시간전</span>
+                                <div class="cmt-cont">
+                                    서비스 오픈을 축하드립니다.서비스 오픈을 축하드립니다.서비스 오픈을 축하드립니다.<br>
+                                    서비스 오픈을 축하드립니다.
+                                </div>
+
+                                <div class="cmt-reply">
+                                    <a href="#none">댓글</a>
+                                </div>
+
+                                <div class="comment-view">
+                                    <div class="cmt-member">
+                                        <div class="input-text"><input type="text" name="" id="" placeholder="이름" value="코나헬스 관리자"></div>
+                                        <div class="input-text"><input type="password" name="" id="" placeholder="비밀번호"></div>
+                                    </div>
+                                    <div class="cmt-write">
+                                        <textarea name="" id="" rows="1" placeholder="댓글을 남겨주세요."></textarea>
+                                        <button type="button" class="btn bl">등록</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="comment-view">
+                            <div class="cmt-member">
+                                <div class="input-text"><input type="text" name="" id="" placeholder="이름" value="코나헬스 관리자"></div>
+                                <div class="input-text"><input type="password" name="" id="" placeholder="비밀번호"></div>
+                            </div>
+                            <div class="cmt-write">
+                                <textarea name="" id="" rows="1" placeholder="댓글을 남겨주세요."></textarea>
+                                <button type="button" class="btn bl">작성</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 댓글영역 -->
+                    
+
+                    <!-- 이전/다음글 영역 -->
+                    <div class="tbl-navi">
+                        <table>
+                            <colgroup>
+                                <col style="width:12%;">
+                                <col style="width:*;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="navi-label">이전</td>
+                                    <td class="title">
+                                        <a href="#none">자유게시판입니다</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="navi-label">다음</td>
+                                    <td class="title">
+                                        <a href="#none">자유게시판입니다자유게시판입니다자유게시판입니다 자유게시판입니다자유게시판입니다</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                     <!-- // 이전/다음글 영역 -->
+
+
+                    <div class="btn-area">
+                        <button type="button" class="btn gr">목록</button>
+                        <button type="submit" class="btn bl">글쓰기</button>
+                    </div>
+                </div>
+                
+
+                <div class="popup-close">
+                    <a href="#none">닫기</a>
+                </div>
+            </div>
+        </div>
+        <!-- // 게시판 -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <ul>
+                <li><a href="" data-open="layer02">이용약관</a><span class="bar"></span><a href="" data-open="layer03">개인정보처리방침</a></li>
+                <li>서울특별시 영등포구 국회대로62길 21 동성빌딩 9층 대표자 : 조정일</li>
+                <li>사업자등록번호 119 – 81 - 46288</li>
+            </ul>
+            <p>Copyright © KONA HEALTHCARE, Inc. All rights reserved.</p>
+        </footer>
+        <!-- // footer -->
+        <!-- <span class="b-arrow"></span> -->
+
+        <!-- SNS 공유 팝업 -->
+        <div class="share-dialog">
+            <div class="share-in-cont">
+                <div class="share-head">
+                    <div class="tit-h3 fw-bold">공유하기</div>
+                    <button type="buton" class="close-btn-right share">닫기</button>
+                </div>
+                <div class="targets">
+                    <a href='http://www.facebook.com/sharer.php?u=' + encodeURIComponent(https://kim-j-s.github.io/veaver/dist/html/07_01.html) class="facebook-share">Facebook</a>
+                    <a href="" class="kakao-share">Kakao</a>
+                </div>
+                <div class="url-copy">
+                    <input type="text" value="http://na1109.cafe24.com/veaver/pub/homepage_pc/index.html"  class="input-url">
+                    <a href="#none" class="btn-copy">복사</a>
+                </div>
+            </div>
+        </div>
+        <!-- // SNS 공유 팝업 -->
+
+        <!-- sns 공유하기 -->
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+        <script>
+            const shareButton = document.querySelector('.btn-share');
+            const shareDialog = document.querySelector('.share-dialog');
+            const closeButton = document.querySelector('.close-btn-right');
+            
+            shareButton.addEventListener('click', event => {
+            if (navigator.share) {
+                navigator.share({
+                        // native 공유하기 타이틀 제공
+                        title: '공유하기',
+                        // 공유하는 url 제공
+                        url: 'https://kim-j-s.github.io/veaver/dist/index.html'
+                    }).then(() => {
+                        console.log('Thanks for sharing!');
+                    })
+                    .catch(console.error);
+                } else {
+                    shareDialog.classList.add('is-open');
+                }
+            });
+
+            closeButton.addEventListener('click', event => {
+                shareDialog.classList.remove('is-open');
+                $('body').removeClass('non-scroll');
+            });
+            
+
+            // 카카오톡 연동
+            Kakao.init('fd3872d29334db88f3bf802e6c8c0ca1');
+            Kakao.Link.createDefaultButton({
+                container: '.kakao-share',
+                objectType: 'feed',
+                content: {
+                    // 제목
+                    title: '코나헬스',
+                    //썸네일
+                    imageUrl: 'https://m.upinews.kr/data/upi/image/20190523/p1065574177335900_669_thum.jpg',
+                    // 링크
+                    link: {
+                        // 모바일 url
+                        mobileWebUrl: 'https://kim-j-s.github.io/veaver/dist/html/07_01.html',
+                        // pc url
+                        webUrl: 'https://kim-j-s.github.io/veaver/dist/html/07_01.html',
+                    }
+                },
+            })
+
+            // URL 복사
+            $('.url-copy a, .url-copy .input-url').on('click',function(){
+                var urlAddress= $('.url-copy .input-url');
+                //console.log(urlAddress);
+                urlAddress.css('display','block').select();
+                document.execCommand("Copy");
+                alert('URL이 복사 되었습니다');	
+                return false;
+            });
+        </script>
+        <!-- // sns 공유하기 -->
+
+    </div>
+    <!-- // wrap -->
+
+    <!-- 비밀번호 확인 팝업 -->
+    <div class="layer-pop msg-pop" data-openmsg="msg01">
+        <div class="msg-cont">
+            <p class="alert-txt">작성시 등록하신 <br>비밀번호를 입력해주세요.</p>
+            <div class="pw-confirm">
+                <div class="input-text">
+                    <input type="password" placeholder="비밀번호">
+                </div>
+                <button type="button" class="btn bl mini">확인</button>
+            </div>
+            <div class="pop-btn">
+                <a href="#" class="layer-close">닫기</a>
+            </div>
+        </div>
+    </div>
+    <!-- // 비밀번호 확인 팝업 -->
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F8E5W9H08K"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-F8E5W9H08K');
+</script>
+
+<script>
+    function openMsg(msg) {
+        $("[data-openmsg='" + msg + "']").addClass('active');
+        $('body').addClass('non-scroll');
+    }
+        // 좋아요 버튼
+        $('.cmt-heart').on('click', function(){
+            $(this).toggleClass('on');
+        });
+
+        //댓글버튼
+        $('.cmt-reply a').on('click', function(){
+            $(this).toggleClass('on').parent().parent().find('.comment-view').toggleClass('active');
+        });
+</script>
+</html>
