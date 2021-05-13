@@ -1988,7 +1988,9 @@ strong {
 	position:absolute;
 	top:0;
 	right:0;
+	display:block;
 	width:8rem;
+	height:4.9rem;
 	background-color:#ebeff3;
 	line-height:4.9rem;
 	border-left:1px solid #ebeff3;
