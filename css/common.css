@@ -1874,12 +1874,17 @@ strong {
 		-ms-flex: 1 1 auto;
 			flex: 1 1 auto;
 }
+.pw-confirm .input-text > input{
+	font-size:1.6rem;
+}
 .pw-confirm > .btn.bl.mini{
 	-webkit-box-flex: 0;
 	-webkit-flex: none;
 		-ms-flex: none;
 			flex: none;
+	min-width:8rem;
 	margin-left: 1rem;
+	border-radius:1rem;
 }
 
 .non-scroll {
@@ -2146,7 +2151,9 @@ strong {
 .tbl-write tr td:first-child {
 	padding-left:0;
 }
-
+.tbl-write .input-text > input {
+	font-size:1.6rem;
+}
 
 
 /* 게시판 영역 */
@@ -2160,16 +2167,14 @@ strong {
 	background-color:#FFF;
 }
 #board-wrap .inner {
-	position:relative;
-	padding-top:6rem;
+	display:flex;
+	flex-flow:column;
 	height:100%;
+	box-sizing:border-box;
+	padding-bottom:2.2rem;
 }
 
 .board-head {
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:150;
 	width:100%;
 	padding:1.8rem 2rem 1.7rem 6rem;
 	border-bottom:1px solid #eee;
@@ -2194,13 +2199,18 @@ strong {
 }
 
 .srch-box {
-	padding:2rem; 
+	padding:1.5rem 1.65rem;
+	background-color:#f4f8fc;
+}
+.srch-box .input-text.search input {
+	background-color:#FFF;
 }
 .srch-box + .board-cont  {
 	padding-top:0;
 }
 .board-cont {
-	padding:2rem 2rem 4rem;
+	position:relative;
+	padding:2rem;
 	overflow-y:auto;
 	height:100%;
 }
@@ -2208,25 +2218,26 @@ strong {
 .input-text > input{
 	display: block;
 	width: 100%;
-	height: 5rem;
+	height: 4.5rem;
 	padding: 0 1.8rem;
 	font-size:1.4rem;
 	border: 1px solid #dbdee5;
 	border-radius:1rem;
 }
 .input-text.search > input{
-	padding-right: 6rem;
-	background: url(../img/ic-search.png) no-repeat right 20px center;
+	padding-right: 5rem;
+	background: url(../img/ic-search.png) no-repeat right 12px center;
 	font-size:1.6rem;
 	color:#909295;
 }
 .board-cont .write-board {
 	overflow: hidden;
-	min-height:24.5rem;
+	min-height:24rem;
+	max-height:100%;
+	margin:1rem 0 0.2rem;
 	font-size:1.6rem;
 	border: 1px solid #dbdee5;
 	border-radius: 1rem;
-	margin-top:1rem;
 }
 
 
@@ -2286,7 +2297,7 @@ strong {
 }
 
 .board-cont .text-info {
-	margin-top:0.7rem;
+	margin-top:0.6rem;
 }
 .board-cont .text-info li {
 	position:relative;
@@ -2337,7 +2348,7 @@ strong {
 
 
 .tbl-body.no-title {
-	position:relative;
+	border-bottom:0 none;
 }
 .tbl-body.no-title p {
 	position:absolute;
@@ -2351,18 +2362,21 @@ strong {
 }
 
 #board-wrap .btn-area {
+	flex:none;
 	display:flex;
 	justify-content:center;
-	margin-top:3rem;
+	/*margin:0 2rem;*/
+	padding-top:2rem;
+	border-top:1px solid #ebeff3;
 }
 #board-wrap .btn-area .btn {
 	width:100%;
-	max-width:15.3rem;
+	max-width:13rem;
 	margin-left:1rem;
 	padding:0 1.5rem;
-	font-size:1.8rem;
+	font-size:1.6rem;
 	font-weight:500;
-	line-height:5rem;
+	line-height:4.5rem;
 	border-radius:1rem;
 }
 #board-wrap .btn-area .btn:first-child {
@@ -2391,10 +2405,10 @@ strong {
 	border-bottom:1px solid #ebeff3;
 }
 .view-head {
-	padding-bottom:2rem;
+	padding:1rem 0 2rem;
 }
 .view-head .text-tit {
-	font-size:1.6rem;
+	font-size:1.7rem;
 	font-weight:700;
 	color:#000;
 }
@@ -2500,6 +2514,7 @@ strong {
 }
 
 .comment-list .comment span {
+	font-size:1.6rem;
 	color:#000;
 }
 .comment-list .comment span.cmt-writer {
@@ -2525,7 +2540,7 @@ strong {
 	position:relative;
 }
 .comment-list .comment .cmt-reply a {
-	font-size:1.6rem;
+	font-size:1.4rem;
 	color:#909295;
 }
 .comment-list .comment .cmt-reply > a.on {
@@ -2550,7 +2565,7 @@ strong {
 	display:-webkit-flex;
 	display:-ms-flexbox;
 	display:flex;
-	margin-bottom:2rem;
+	margin-bottom:1rem;
 }
 .cmt-member div.input-text {
 	width:100%;
@@ -2580,7 +2595,7 @@ strong {
 	right:2rem;
 	bottom:2rem;
 	min-width:6rem;
-	line-height:4rem;
+	line-height:3.6rem;
 	border-radius:1rem;
 }
 
